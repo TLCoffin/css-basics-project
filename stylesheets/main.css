@@ -1,0 +1,29 @@
+body {
+  /*
+    styling with all the overall information for the generic styling for the webpages
+  */
+  background-color: #055a8705;
+  color: #01131c;
+  font-family: georgia serif sans-serif;
+}
+
+p {
+  font-size: 17px;
+  margin: 1px;
+  border: 1px;
+  padding: 1px;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 1px;
+  border: 1px;
+  padding: 1px;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 1px;
+  border: 1px;
+  padding: 1px;
+}

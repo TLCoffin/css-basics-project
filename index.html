@@ -1,0 +1,159 @@
+<!--
+  Name: Trevor Coffin
+  Course: Web Development
+  Teacher: Mr. Hardman
+  School: Pembina Trails Early College
+  Date Last Modified: 13<sup>th</sup> november 2022
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+
+    <!--
+      link to the external CSS page
+    -->
+    <link rel="stylesheet" href="stylesheets/main.css" />
+    <style>
+      /*
+        div styling border colour and shape
+      */
+      div {
+        background-color: #01677025;
+        width: auto;
+        height: auto;
+        border: 3px solid #055a8725;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin: 5px;
+      }
+
+      /*
+        link border colour and shape
+      */
+      nav ul li {
+        background-color: #01677025;
+        display: inline-block;
+        margin: 10px;
+        font-size: 20px;
+        border: 3px solid #055a8725;
+        border-radius: 2px;
+      }
+
+      /*
+        link text colour
+      */
+      a {
+        color: #055a87;
+      }
+
+      /*
+        italics for span elements
+      */
+      span {
+        font-weight: bold;
+        text-decoration: underline;
+      }
+
+      /*
+        added spacing for this class
+      */
+      .space {
+        padding: 15px;
+      }
+
+      /*
+        added spacing and text size for this id
+      */
+      #fine-text {
+        font-size: 12px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!--
+        navigation bar for future pages and content
+      -->
+      <nav>
+        <h1>Treaties In Manitoba</h1>
+        <ul>
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="">future link 1</a></li>
+          <li><a href="">future link 2</a></li>
+          <li><a href="">future link 3</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--
+      main content for the homepage
+    -->
+    <main>
+      <!--
+        heading and territory image
+      -->
+      <section>
+        <h2>Treaty 5</h2>
+
+        <p>
+          Historicaly Canada has made Treaties with the First Nations Peoples to define how they would life together a variety of <br />
+          different Treaties affect people today. This site is talking about he fifth treaty of Canada and how it affects First Nations
+        </p>
+        <img src="images/treaty-5-map.jpg" width="40%" alt="a visual aid for comparing the boundaries of treaty 5 and Manitoba" />
+        <p>
+          Above is a map comparing the boundaries for treaty 5 and Manitoba. This treaty dips a little into the surrounding provinces, <br />
+          Ontario and Saskatchewan.
+        </p>
+        <br />
+        <br />
+        <!--
+          div with a list of all groups in the Treaty signing
+        -->
+        <div>
+          <h3>The groups involved in treaty 5</h3>
+          <ul>
+            <li>Chemawawin</li>
+            <li>Berens River</li>
+            <li>Black River</li>
+            <li>Bloodvein</li>
+            <li>Cross Lake</li>
+            <li>Fisher River</li>
+            <li>Grand Rapids</li>
+            <li>Hollow Water</li>
+            <li>Kinonjeoshtegon</li>
+            <li>little Black River</li>
+            <li>Mosakahiken</li>
+            <li>Norway House</li>
+            <li>Opaskwayak</li>
+            <li>Poplar River</li>
+            <br />
+            <p><span>Treaty 5 Adhesions</span></p>
+            <li>Nelson House</li>
+            <li>Norway House</li>
+            <li>Oxford House</li>
+            <li>God&#39;s Lake</li>
+            <li>Deer&#39;s Lake east</li>
+            <li>York Factory</li>
+          </ul>
+        </div>
+        <!--
+          extra information below the div
+        -->
+        <p class="space">
+          This Treaty offered $5 every year per person and 160 acres of land per family. We will go into more detail in the upcoming pages.
+        </p>
+      </section>
+    </main>
+    <!--
+      footer with copright information
+    -->
+    <footer>
+      <p id="fine-text">&#169; Trevor</p>
+    </footer>
+  </body>
+</html>
