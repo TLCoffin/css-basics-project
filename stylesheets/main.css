@@ -1,29 +1,67 @@
+html {
+  font-size: 62.5%;
+}
+
 body {
   /*
     styling with all the overall information for the generic styling for the webpages
   */
   background-color: #055a8705;
   color: #01131c;
-  font-family: georgia serif sans-serif;
+  font-family: georgia, arial, sans-serif;
+  line-height: 140%;
+  font-size: 1.6rem;
 }
 
 p {
-  font-size: 17px;
+  font-size: 1.6rem;
   margin: 1px;
   border: 1px;
   padding: 1px;
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 23px;
+  margin: 1px;
+  border: 1px;
+  padding: 1px;
+  text-transform: uppercase;
+  text-decoration: bold;
+}
+
+h2 {
+  font-size: 23px;
   margin: 1px;
   border: 1px;
   padding: 1px;
 }
 
-h2 {
-  font-size: 20px;
-  margin: 1px;
-  border: 1px;
-  padding: 1px;
-}
+/*OUTLINE------------------------------------*/
+
+/* font-family: ;
+  color: ;
+  background-color: ;
+  font-size: ;
+  font-weight: ;
+  text-decoration: ;
+  font-style: ;
+  text-transform: ;
+  letter-spacing: ;
+  word-spacing: ;
+  line-height: ; */
+
+/* 
+  color choices potential
+  -yellow - sunshine happiness
+  -green - nature generosity
+  -blue - sea sky harmony peace trust calm
+  -white - innocence goodness cleanliness humility
+  -grey - nutrility balance
+  -brown - earth wood comfort security down to earth 
+
+  orange and blue
+  #ff5e00 #00a1ff
+  
+  yellow and blue
+  #f5ff00 #0a00ff
+*/
