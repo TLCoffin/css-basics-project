@@ -36,6 +36,29 @@ h2 {
   padding: 1px;
 }
 
+a {
+  color: #055a87;
+}
+
+nav ul li {
+  /* background-color: #01677025; */
+  display: inline-block;
+  /* margin: 10px;
+  font-size: 20px;
+  border: 3px solid #055a8725;
+  border-radius: 2px; */
+}
+
+.nav-link {
+  background-color: #01677025;
+  display: inline-block;
+  margin: 10px;
+  font-size: 20px;
+  border: 2px, solid, #055a8725;
+  border-radius: 5px;
+  padding: 10px;
+}
+
 /*OUTLINE------------------------------------*/
 
 /* font-family: ;
