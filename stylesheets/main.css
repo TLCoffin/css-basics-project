@@ -37,7 +37,7 @@ h2 {
 }
 
 a {
-  color: #055a87;
+  color: #005aad;
 }
 
 nav ul li {
@@ -50,13 +50,19 @@ nav ul li {
 }
 
 .nav-link {
-  background-color: #01677025;
+  background-color: #005c8145;
   display: inline-block;
   margin: 10px;
   font-size: 20px;
   border: 2px, solid, #055a8725;
   border-radius: 5px;
   padding: 10px;
+}
+
+img {
+  /* border: 4px solid #055a8745; */
+  border: 5px solid #ff7f34;
+  border-radius: 3px;
 }
 
 /*OUTLINE------------------------------------*/
