@@ -50,7 +50,7 @@ nav ul li {
 }
 
 .nav-link {
-  background-color: #005c8145;
+  background-color: #55bde770;
   display: inline-block;
   margin: 10px;
   font-size: 20px;
@@ -65,7 +65,16 @@ img {
   border-radius: 3px;
 }
 
+nav a:hover,
+nav a:focus {
+  background-color: #005aad;
+  color: #55bde7;
+}
+
 /*OUTLINE------------------------------------*/
+
+/* Good blue #00A0E0 and #0097D3
+
 
 /* font-family: ;
   color: ;
