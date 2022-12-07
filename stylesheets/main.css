@@ -33,7 +33,17 @@ body {
 }
 
 /* 
-  
+  This styles the font-size of any h1 elements to be 2.5 times 
+  the size of the root element. (html element)
+
+  margin border and padding is the space added between other 
+  elements and the border (Margin) and the element and the border.
+  (Padding) in this instance there is 10px of space between the
+  border and other elements and 1px of space between the border
+  and the element and finally the border itself is 1px thick.
+
+  text-transform is a property that allows you to change text 
+  elements
 */
 h1 {
   font-size: 2.5rem;
@@ -60,7 +70,7 @@ h2 {
 
   The border sets the size of the border to be 1 px in size.
 
-  This padding attribute adds 1px of space between the element and 
+  This padding property adds 1px of space between the element and 
   it's border
 */
 p {
@@ -102,11 +112,11 @@ nav li {
 }
 
 /* 
-(Comment from Scott hardman *don't have the full comment here)
+  (Comment from Scott hardman *don't have the full comment here)
   Height 95% means that this element is 95% the height of the 
   parent element.
   
-  padding
+  This allows 15px of space between the links and the border
 */
 nav a {
   height: 95%;
@@ -129,10 +139,10 @@ nav a:focus {
   color: #55bde7;
 }
 
-/*  When clicking and holding on this element it becomes very bold (bolder) */
-nav a:active {
-  font-weight: bolder;
-}
+/* nav a:active {
+  background-color: #005aad;
+  color: #55bde7;
+} */
 
 .nav-link {
   background-color: #55bde770;
@@ -140,14 +150,14 @@ nav a:active {
   margin: 10px;
   font-size: 20px;
   border: 2px, solid, #055a8725;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   padding: 10px;
 }
 
 img {
   border: 5px solid #ff7f34;
-  border-radius: 3px;
-  margin: 15px, 5px;
+  /* border-radius: 3px; */
+  margin: 10px;
 }
 
 section div {
@@ -156,6 +166,7 @@ section div {
   width: 80%;
 
   padding: 1.5% 3%;
+  margin: 10px;
 
   background-color: #55bde750;
 }
@@ -216,7 +227,7 @@ span {
   -blue - sea sky harmony peace trust calm
   -white - innocence goodness cleanliness humility
   -grey - nutrility balance
-  -brown - earth wood comfort security down to earth 
+  -brown - earth wood comfort security down to earth dirt
 
   orange and blue
   #ff5e00 #00a1ff
