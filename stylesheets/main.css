@@ -1,28 +1,43 @@
+* {
+  margin: 0;
+  line-height: 140%;
+}
+
+/* 
+  This sets the default font-size of the html element to 62.5% 
+  of the default font-size of the web browser or web page.
+*/
 html {
   font-size: 62.5%;
 }
 
+/* 
+  The first 2 lines set the color of the background and text in 
+  the body element background is set to #055a8705 and the text 
+  is set to #01131c. 
+  
+  The font-family attribute sets the font for the text and any 
+  alternative fonts if the browser doesn't support the primary 
+  font.
+
+  (Comment below from Scott Hardman)
+  This will style the body element and all elements that inherit
+  from the body styling to have a font-size of 1.8 times the size 
+  of the root elements font size.
+*/
 body {
-  /*
-    styling with all the overall information for the generic styling for the webpages
-  */
   background-color: #055a8705;
   color: #01131c;
   font-family: georgia, arial, sans-serif;
-  line-height: 140%;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
-p {
-  font-size: 1.6rem;
-  margin: 1px;
-  border: 1px;
-  padding: 1px;
-}
-
+/* 
+  
+*/
 h1 {
-  font-size: 23px;
-  margin: 1px;
+  font-size: 2.5rem;
+  margin: 10px;
   border: 1px;
   padding: 1px;
   text-transform: uppercase;
@@ -30,23 +45,93 @@ h1 {
 }
 
 h2 {
-  font-size: 23px;
-  margin: 1px;
+  font-size: 2.3rem;
+  margin: 18px 5px;
   border: 1px;
   padding: 1px;
 }
 
-a {
-  color: #005aad;
+/* 
+  This again styles the text to be 1.6 times the size of the root 
+  element 
+
+  This margin gives 5px of space around the outside of the <p> 
+  elements' border.
+
+  The border sets the size of the border to be 1 px in size.
+
+  This padding attribute adds 1px of space between the element and 
+  it's border
+*/
+p {
+  font-size: 1.6rem;
+  margin: 5px 5px;
+  border: 1px;
+  padding: 1px;
 }
 
-nav ul li {
-  /* background-color: #01677025; */
+/* 
+  This sets the background color of the nav to be #55bde730, 
+  this color is a light off blue
+*/
+nav {
+  background-color: #55bde730;
+}
+
+/* 
+  A margin of 5px this space goes around the entire element
+
+  Padding is set to none so that there is less space between 
+  the border and the element.
+*/
+nav ul {
+  margin: 5px;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+/* 
+  display: inline-block; allows the links in the nav to be 
+  displayed beside each other instead of being in a vertical 
+  list.
+*/
+nav li {
   display: inline-block;
-  /* margin: 10px;
-  font-size: 20px;
-  border: 3px solid #055a8725;
-  border-radius: 2px; */
+}
+
+/* 
+(Comment from Scott hardman *don't have the full comment here)
+  Height 95% means that this element is 95% the height of the 
+  parent element.
+  
+  padding
+*/
+nav a {
+  height: 95%;
+
+  padding: 15px;
+
+  color: #005aad;
+
+  text-decoration: none;
+}
+
+/* 
+  When tabbing through or hovering over this element the background 
+  is set to a light blue #005aad and the font-color is set to a 
+  lighter blue #55bde7
+*/
+nav a:hover,
+nav a:focus {
+  background-color: #005aad;
+  color: #55bde7;
+}
+
+/*  When clicking and holding on this element it becomes very bold (bolder) */
+nav a:active {
+  font-weight: bolder;
 }
 
 .nav-link {
@@ -60,15 +145,51 @@ nav ul li {
 }
 
 img {
-  /* border: 4px solid #055a8745; */
   border: 5px solid #ff7f34;
   border-radius: 3px;
+  margin: 15px, 5px;
 }
 
-nav a:hover,
-nav a:focus {
-  background-color: #005aad;
-  color: #55bde7;
+section div {
+  display: inline-block;
+
+  width: 80%;
+
+  padding: 1.5% 3%;
+
+  background-color: #55bde750;
+}
+
+section figure {
+  display: inline-block;
+
+  width: 50%;
+}
+
+/*----------------Index.HTML---------------*/
+
+/* section {
+  background-color: #55bde750;
+  width: auto;
+  height: auto;
+  border: 5px solid #005aad80;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px;
+} */
+
+span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.space {
+  padding: 15px;
+}
+
+#fine-text {
+  font-size: 12px;
+  padding: 10px;
 }
 
 /*OUTLINE------------------------------------*/
