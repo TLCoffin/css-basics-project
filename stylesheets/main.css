@@ -1,3 +1,11 @@
+/*
+  Name: Trevor Coffin
+  Course: Web Development
+  Teacher: Mr. Hardman
+  School: Pembina Trails Early College
+  Date Last Modified: 14<sup>th</sup> dec 2022
+*/
+
 * {
   margin: 0;
   line-height: 140%;
@@ -155,8 +163,14 @@ nav a:focus {
 }
 
 img {
-  border: 5px solid #ff7f34;
+  border: 8px solid #ff7f34;
   /* border-radius: 3px; */
+  margin: 10px;
+}
+
+.normal-section {
+  background-color: #55bde750;
+  padding: 1.5% 3%;
   margin: 10px;
 }
 
@@ -166,7 +180,7 @@ section div {
   width: 80%;
 
   padding: 1.5% 3%;
-  margin: 10px;
+  margin: 10px 20px;
 
   background-color: #55bde750;
 }
