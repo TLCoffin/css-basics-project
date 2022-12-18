@@ -59,6 +59,8 @@ h1 {
   border: 1px;
   padding: 1px;
   text-transform: uppercase;
+  -webkit-text-decoration: bold;
+  -moz-text-decoration: bold;
   text-decoration: bold;
 }
 
@@ -147,24 +149,24 @@ nav a:focus {
   color: #55bde7;
 }
 
-/* nav a:active {
-  background-color: #005aad;
-  color: #55bde7;
-} */
+/* 
+  any elements with the class of nav-link to have a background of #55bde770
+  be aligned horizontally with other elements have a margin of 10px the font-size is set to 
+  20px our border is 2px with a color of solid dark blue and 10px of padding between the
+  element and its border
 
+*/
 .nav-link {
   background-color: #55bde770;
   display: inline-block;
   margin: 10px;
   font-size: 20px;
   border: 2px, solid, #055a8725;
-  /* border-radius: 5px; */
   padding: 10px;
 }
 
 img {
   border: 8px solid #ff7f34;
-  /* border-radius: 3px; */
   margin: 10px;
 }
 
@@ -191,61 +193,11 @@ section figure {
   width: 50%;
 }
 
-/*----------------Index.HTML---------------*/
-
-/* section {
-  background-color: #55bde750;
-  width: auto;
-  height: auto;
-  border: 5px solid #005aad80;
-  border-radius: 5px;
-  padding: 5px 10px;
-  margin: 5px;
-} */
+.fine-text {
+  font-size: 1.2rem;
+}
 
 span {
   font-weight: bold;
   text-decoration: underline;
 }
-
-.space {
-  padding: 15px;
-}
-
-#fine-text {
-  font-size: 12px;
-  padding: 10px;
-}
-
-/*OUTLINE------------------------------------*/
-
-/* Good blue #00A0E0 and #0097D3
-
-
-/* font-family: ;
-  color: ;
-  background-color: ;
-  font-size: ;
-  font-weight: ;
-  text-decoration: ;
-  font-style: ;
-  text-transform: ;
-  letter-spacing: ;
-  word-spacing: ;
-  line-height: ; */
-
-/* 
-  color choices potential
-  -yellow - sunshine happiness
-  -green - nature generosity
-  -blue - sea sky harmony peace trust calm
-  -white - innocence goodness cleanliness humility
-  -grey - nutrility balance
-  -brown - earth wood comfort security down to earth dirt
-
-  orange and blue
-  #ff5e00 #00a1ff
-  
-  yellow and blue
-  #f5ff00 #0a00ff
-*/

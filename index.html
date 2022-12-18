@@ -12,18 +12,33 @@
     -->
     <link rel="stylesheet" href="stylesheets/main.css" />
     <style>
+      /* 
+        The element with the id of secondary-title will be styledd with an underline and be bolded
+      */
       #secondary-title {
         text-decoration: underline;
         font-weight: bold;
       }
 
+      /* 
+        figcaptions on this page will have no margin on the top and bottom and 15px of margin on the sides
+        have a width of 40% of the page an be aligned to the center of the page
+      */
       figcaption {
         margin: 0p 15px;
         width: 40%;
         text-align: center;
+
+        /* 
+        sections on this page have a width of 35% of the screen
+      */
       }
       section {
         width: 35%;
+      }
+
+      .space {
+        padding: 15px;
       }
     </style>
   </head>
@@ -36,7 +51,7 @@
         <ul>
           <li><a href="index.html" class="nav-link">Homepage</a></li>
           <li><a href="second-page.html" class="nav-link">Treaty 5</a></li>
-          <li><a href="" class="nav-link">future link </a></li>
+          <li><a href="" class="nav-link">future link 1</a></li>
         </ul>
       </nav>
       <h1>Treaties In Canada</h1>
@@ -111,7 +126,12 @@
       footer with copright information
     -->
     <footer>
-      <p id="fine-text">&#169; Trevor</p>
+      <p class="fine-text">
+        Information from the following sources,<br />
+        About Treaty 5: https://www.treaty5.com/story-of-treaty-5-1875-the-winnipeg-treaty<br />
+        Canadian Encyclopedia: https://www.thecanadianencyclopedia.ca/en/article/treaty-5<br />
+        &#169;Trevor Coffin
+      </p>
     </footer>
   </body>
 </html>
