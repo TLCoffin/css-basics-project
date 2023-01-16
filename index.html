@@ -4,23 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homepage</title>
+    <title>Treaty Overview</title>
 
     <!--
       This element links to the external stylesheet of the website 
       and enables any CSS to take effect on this page.
     -->
     <link rel="stylesheet" href="stylesheets/main.css" />
+    <script src="scripts/image-lean.js"></script>
     <style>
-      /* 
+      /*
         The element with the id of secondary-title will be styledd with an underline and be bolded
       */
       #secondary-title {
-        text-decoration: underline;
         font-weight: bold;
       }
 
-      /* 
+      /*
         figcaptions on this page will have no margin on the top and bottom and 15px of margin on the sides
         have a width of 40% of the page an be aligned to the center of the page
       */
@@ -28,21 +28,32 @@
         margin: 0p 15px;
         width: 40%;
         text-align: center;
-
-        /* 
-        sections on this page have a width of 35% of the screen
-      */
+        margin-left: 29%;
+        /* sections on this page have a width of 35% of the screen */
       }
       section {
         width: 35%;
+        margin-left: 30%;
       }
 
-      /* 
+      /*
         any element with the class of space on this page will have 15px of space between the element itself
         and its border
       */
       .space {
         padding: 15px;
+      }
+
+      #additional-link {
+        text-decoration: none;
+        padding: 2px;
+        background-color: #cba267;
+        color: black;
+        border: 2px solid #48331d;
+      }
+
+      a {
+        text-decoration: none;
       }
     </style>
   </head>
@@ -53,9 +64,9 @@
       -->
       <nav>
         <ul>
-          <li><a href="index.html" class="nav-link">Homepage</a></li>
-          <li><a href="second-page.html" class="nav-link">Treaty 5</a></li>
-          <li><a href="" class="nav-link">future link 1</a></li>
+          <li><a href="index.html" class="nav-link">Treaty Overview</a></li>
+          <li><a href="treaty-five-signing.html" class="nav-link">Treaty 5 Signing</a></li>
+          <li><a href="treaties-today.html" class="nav-link">Treaties Today</a></li>
         </ul>
       </nav>
       <h1>Treaties In Canada</h1>
@@ -66,19 +77,19 @@
     -->
     <main>
       <p>
-        Historicaly Canada has made Treaties with the First Nations Peoples to define how they would life together. A variety of different
+        Historicaly Canada has made Treaties with the First Nations Peoples to define how they would live together. A variety of different<br />
         Treaties affect people today. This site is talking about he fifth Treaty of Canada and how it affects First Nations.
       </p>
 
       <!-- 
-        a collection of an image and some text (caption) to describe it
-      -->
+          a collection of an image and some text (caption) to describe it
+        -->
       <figure>
         <img
           src="images/numbered-treaties-map.jpg"
           width="40%"
           alt="A map of Canada with the 11 treaty area borders overlayed 
-        tagged with their number and year they were signed" />
+            tagged with their number and year they were signed" />
         <figcaption>
           Above is a map showing the areas for all of the 11 Treaties in Canada we are going to be focusing on the fifth Treaty and it's
           adhesion.
@@ -87,10 +98,10 @@
       <br />
       <br />
       <!--
-          div with a list of all groups in the Treaty signing (including the adhesion)
-        -->
+            div with a list of all groups in the Treaty signing (including the adhesion)
+          -->
       <section class="normal-section">
-        <h3>Groups involved in Treaty 5</h3>
+        <h2>Groups involved in Treaty 5</h2>
         <ul>
           <li>Chemawawin</li>
           <li>Berens River</li>
@@ -107,7 +118,7 @@
           <li>Opaskwayak</li>
           <li>Poplar River</li>
           <br />
-          <p id="secondary-title">Treaty 5 Adhesions</p>
+          <h3 id="secondary-title">Treaty 5 Adhesions</h3>
           <li>Nelson House</li>
           <li>Norway House</li>
           <li>Oxford House</li>
@@ -120,18 +131,26 @@
           extra information below the div
         -->
       <p class="space">
-        This Treaty offered $5 every year per person and 160 acres of land per family. To learn more about the Treaty 5 signing click
-        <a href="second-page.html">Here</a>
+        This Treaty offered $5 every year per person and 160 acres of land per family.
+        <a href="treaty-five-signing.html">Click here to learn more about the Treaty 5 signing.</a>
       </p>
     </main>
     <!--
-      footer with copright and sorce information
+      footer with copright and source information
     -->
     <footer>
-      <p class="fine-text">
+      <p class="footer-text">
         Information from the following sources,<br />
-        About Treaty 5: https://www.treaty5.com/story-of-treaty-5-1875-the-winnipeg-treaty<br />
-        Canadian Encyclopedia: https://www.thecanadianencyclopedia.ca/en/article/treaty-5<br />
+        About Treaty 5:
+        <a target="_blank" href="https://www.treaty5.com/story-of-treaty-5-1875-the-winnipeg-treaty"
+          >Click here to see more about the Treaty 5 Story
+        </a>
+        <br />
+        Canadian Encyclopedia:
+        <a target="_blank" href="https://www.thecanadianencyclopedia.ca/en/article/treaty-5">
+          Click here to visit the Canadian Encyclopedia on Treaty 5
+        </a>
+        <br />
         &#169;Trevor Coffin
       </p>
     </footer>

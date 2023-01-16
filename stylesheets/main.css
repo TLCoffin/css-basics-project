@@ -1,3 +1,31 @@
+/* 
+  (Comment below from Scott Hardman)
+  This will style all elements to have no space
+  around the edges of the element by default and 
+  have line spacing of all 140% of the font size 
+  of the element.
+
+  as well at the top of this document, the colour
+  scheme of this website is muted orange/browns.
+
+  the background and hover background for the nav
+  links is (#ede6df) a very light brown.
+
+  The background colours for sections, divs, the
+  nav bar and a few other elements is (#cba267)
+  a light muted orange.
+
+  The image borders, nav link backgrounds, nav link
+  hover text as well as a few others is (#48331d)
+  a dark brown for colour contrast.
+
+  This colour scheme is used because the colour
+  brown in psychology reminds people of the earth
+  nature and gives people a sense of comfort and
+  security, this page is discussing Treaties so
+  it is important to make users feel welcome in a 
+  learning environment.
+*/
 * {
   margin: 0;
   line-height: 140%;
@@ -26,10 +54,11 @@ html {
   of the root elements font size.
 */
 body {
-  background-color: #055a8705;
   color: #01131c;
-  font-family: georgia, arial, sans-serif;
+  background-color: #ede6df;
+  font-family: "Times new roman" Georgia serif;
   font-size: 1.8rem;
+  text-align: center;
 }
 
 /* 
@@ -46,8 +75,7 @@ body {
   elements
 */
 h1 {
-  font-size: 2.5rem;
-  margin: 10px;
+  font-size: 3.4rem;
   border: 1px;
   padding: 1px;
   text-transform: uppercase;
@@ -63,7 +91,7 @@ h1 {
   between the element and it's border
 */
 h2 {
-  font-size: 2.3rem;
+  font-size: 3.2rem;
   margin: 18px 5px;
   border: 1px;
   padding: 1px;
@@ -93,7 +121,9 @@ p {
   this color is a light off blue
 */
 nav {
-  background-color: #55bde730;
+  background-color: #cba267;
+
+  height: 100px;
 }
 
 /* 
@@ -104,8 +134,6 @@ nav {
 */
 nav ul {
   margin: 5px;
-
-  padding: 0;
 
   list-style: none;
 }
@@ -131,9 +159,10 @@ nav a {
 
   padding: 15px;
 
-  color: #005aad;
+  color: #ede6df;
 
   text-decoration: none;
+  font-weight: bold;
 }
 
 /* 
@@ -143,8 +172,8 @@ nav a {
 */
 nav a:hover,
 nav a:focus {
-  background-color: #005aad;
-  color: #55bde7;
+  background-color: #ede6df;
+  color: #48331d;
 }
 
 /* 
@@ -152,10 +181,9 @@ nav a:focus {
   be aligned horizontally with other elements have a margin of 10px the font-size is set to 
   20px our border is 2px with a color of solid dark blue and 10px of padding between the
   element and its border
-
 */
 .nav-link {
-  background-color: #55bde770;
+  background-color: #48331d;
   display: inline-block;
   margin: 10px;
   font-size: 20px;
@@ -168,8 +196,8 @@ nav a:focus {
   margin on all sides of 10px
 */
 img {
-  border: 8px solid #ff7f34;
-  margin: 10px;
+  border: 8px solid #48331d;
+  margin-top: 1%;
 }
 
 /* 
@@ -178,9 +206,9 @@ img {
   between the element and it's border of 10px
 */
 .normal-section {
-  background-color: #55bde750;
-  padding: 1.5% 3%;
-  margin: 10px;
+  background-color: #cba267;
+  padding: 10px;
+  margin-left: 32%;
 }
 
 /* 
@@ -192,12 +220,11 @@ img {
 section div {
   display: inline-block;
 
-  width: 80%;
+  /* width: 100%; */
 
   padding: 1.5% 3%;
-  margin: 10px 20px;
 
-  background-color: #55bde750;
+  background-color: #cba267;
 }
 
 /* 
@@ -211,16 +238,27 @@ section figure {
 }
 
 /* 
-  any element with the class of fine-text will have a font-size of 1.2 times the size of the root element
-*/
-.fine-text {
-  font-size: 1.2rem;
-}
-
-/* 
   spans on the website will be bolded and underlined
 */
 span {
   font-weight: bold;
   text-decoration: underline;
+}
+
+footer {
+  background-color: #cba267;
+  height: 150px;
+}
+
+.footer-text {
+  margin-top: 1%;
+  padding: 30px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
