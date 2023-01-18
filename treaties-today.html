@@ -3,7 +3,7 @@
   Course: We Development
   Teacher: Mr. Hardman
   School: PTEC
-  Date Last Modified: m/d/y
+  Date Last Modified: Jan/18/2023
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -31,6 +31,77 @@
       /* This styles any links on this page to get rid of it's default underline */
       a {
         text-decoration: none;
+      }
+
+      img {
+        border: none;
+        margin: 10px 0;
+      }
+
+      /* 
+        All the CSS and HTML for the flipping Treaty Medal is from W3 Schools webpage on 
+        how to use the rotate property.
+
+        This styles the element with the flip card class to have a trasparent background
+        height and width of 400 and 300px the perspective element shows the element as if
+        it was a 3 dimentional object and adds margin around it
+      */
+      .flip-card {
+        background-color: transparent;
+        width: 400px;
+        height: 300px;
+        perspective: 1000px;
+        margin: 3% 0 3% 37%;
+      }
+
+      /*
+        This positions the inner card part and gets it ready for flipping
+        relative positions the element relative to its ancestor element
+        the width and height are set. The text align centers the text in the element
+        the transforms make the flipping look more 3 dimentional
+      */
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+
+      /* 
+        This snippet of CSS makes it so when you hover over you hover over this element
+        it rotates the element to the other side
+      */
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+
+      /* 
+        This hides the back face when the front face is positioned towards the user
+      */
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      /* 
+        This styles the background colour of the front side
+      */
+      .flip-card-front {
+        background-color: #ede6df;
+      }
+
+      /* 
+        This styles the background colour of the back face and roates the Medal
+      */
+      .flip-card-back {
+        background-color: #ede6df;
+        transform: rotateY(180deg);
       }
     </style>
   </head>
@@ -72,7 +143,20 @@
           </p>
         </div>
       </section>
-      <img src="images/Treaty-eagle.jfif" width="28%" />
+      <!-- 
+        This block of HTML is the HTMl from W3 Schools and is the elements
+        for the flipping Treaty Medal
+      -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/Treaty-medal.png" alt="Treaty Medal" style="width: 70%" />
+          </div>
+          <div class="flip-card-back">
+            <img src="images/Treaty-medal.png" alt="Treaty Medal" style="width: 70%" />
+          </div>
+        </div>
+      </div>
     </main>
     <!-- Footer at the bottom contains copyright and source information -->
     <footer>
