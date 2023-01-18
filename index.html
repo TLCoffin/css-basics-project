@@ -11,7 +11,7 @@
       and enables any CSS to take effect on this page.
     -->
     <link rel="stylesheet" href="stylesheets/main.css" />
-    <script src="scripts/image-lean.js"></script>
+
     <style>
       /*
         The element with the id of secondary-title will be styledd with an underline and be bolded
@@ -29,8 +29,9 @@
         width: 40%;
         text-align: center;
         margin-left: 29%;
-        /* sections on this page have a width of 35% of the screen */
       }
+
+      /* sections on this page have a width of 35% of the screen and are pushed 30% to the right */
       section {
         width: 35%;
         margin-left: 30%;
@@ -44,6 +45,11 @@
         padding: 15px;
       }
 
+      /*
+        The element with the id of "additional-link" will be styled to have no extra text decoration,
+        a space of 2 px between the element and it's border, have a backgorund colour of #cba267 (a light
+        brown), a text colour of black, and a solid 2px wide dark brown border.
+      */
       #additional-link {
         text-decoration: none;
         padding: 2px;
@@ -52,8 +58,21 @@
         border: 2px solid #48331d;
       }
 
+      /*
+        This styles links on this page to no longer have the default underline
+        beneath the link text
+      */
       a {
         text-decoration: none;
+      }
+
+      #hover-grow:hover {
+        transform: scale(1.06);
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
       }
     </style>
   </head>
@@ -82,10 +101,11 @@
       </p>
 
       <!-- 
-          a collection of an image and some text (caption) to describe it
-        -->
+        a collection of an image and some text (caption) to describe it
+      -->
       <figure>
         <img
+          id="hover-grow"
           src="images/numbered-treaties-map.jpg"
           width="40%"
           alt="A map of Canada with the 11 treaty area borders overlayed 
@@ -98,8 +118,8 @@
       <br />
       <br />
       <!--
-            div with a list of all groups in the Treaty signing (including the adhesion)
-          -->
+        div with a list of all groups in the Treaty signing (including the adhesion)
+      -->
       <section class="normal-section">
         <h2>Groups involved in Treaty 5</h2>
         <ul>
@@ -128,8 +148,8 @@
         </ul>
       </section>
       <!--
-          extra information below the div
-        -->
+        extra information below the div
+      -->
       <p class="space">
         This Treaty offered $5 every year per person and 160 acres of land per family.
         <a href="treaty-five-signing.html">Click here to learn more about the Treaty 5 signing.</a>
